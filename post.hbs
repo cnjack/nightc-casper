@@ -1,5 +1,5 @@
 {{!< default}}
-
+<link href="//cdn.bootcss.com/highlight.js/9.5.0/styles/dracula.min.css" rel="stylesheet">
 {{!-- The comment above "< default" means - insert everything in this file into
     the {{{body}}} of the default.hbs template, containing the blog header/footer. --}}
 
@@ -106,5 +106,10 @@
     </a>
     {{/prev_post}}
 </aside>
-
+<script src="//cdn.bootcss.com/highlight.js/9.5.0/highlight.min.js"></script>
+	<script src="//cdn.bootcss.com/highlight.js/9.5.0/languages/go.min.js"></script>
+	<script src="//cdn.bootcss.com/highlight.js/9.5.0/languages/bash.min.js"></script>
+    <script>
+    	hljs.initHighlightingOnLoad();
+    </script>
 {{/post}}
